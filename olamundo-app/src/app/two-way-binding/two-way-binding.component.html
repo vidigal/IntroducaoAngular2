@@ -1,0 +1,22 @@
+<h1>Exemplos de Two-way binding</h1>
+
+<h2><strong>'Como não fazer'</strong> Exemplo 1</h2>
+<h3>Pode até fazer assim, mas há uma forma mais otimizada.</h3>
+<input type="text" #iptTexto
+       [value]="texto"
+       (input)="iptTextoOnInput(iptTexto.value)"
+/>
+<p>Você digitou {{ texto }}</p>
+<hr>
+
+<h2>Exemplo 2 - Two-way data binding</h2>
+<!--Mantem sempre atualizado o template e o Componente JS -->
+<input type="text" [(ngModel)]="nome" />
+<p>Seu nome é {{ nome }}</p>
+<hr>
+
+<h2>Exemplo 3 - Two-way data binding</h2>
+<!--Mantem sempre atualizado o template e o Componente JS -->
+<input type="checkbox" [(ngModel)]="marcado" />
+<p>Seu checkbox está {{ marcado?"marcado":"não marcado" }}</p>
+<hr>

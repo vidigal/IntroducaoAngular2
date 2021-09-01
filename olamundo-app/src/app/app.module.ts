@@ -11,6 +11,11 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import { ContatoComponent } from './contato/contato.component';
 import { PrincipalComponent } from './principal/principal.component';
+import { InterpolacaoComponent } from './interpolacao/interpolacao.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,16 +23,21 @@ import { PrincipalComponent } from './principal/principal.component';
     NavbarComponent,
     RodapeComponent,
     ContatoComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    InterpolacaoComponent,
+    PropertyBindingComponent,
+    EventBindingComponent,
+    TwoWayBindingComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent, RodapeComponent]
 })
