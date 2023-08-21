@@ -8,7 +8,8 @@ import {EventBindingComponent} from "./event-binding/event-binding.component";
 import {TwoWayBindingComponent} from "./two-way-binding/two-way-binding.component";
 
 const routes: Routes = [
-  {path: '', component: PrincipalComponent},
+  {path: '', redirectTo: 'principal', pathMatch: 'full'},
+  {path: 'principal', component: PrincipalComponent},
   {path: 'contato', component: ContatoComponent},
   {path: 'interpolacao', component: InterpolacaoComponent},
   {path: 'property-binding', component: PropertyBindingComponent},

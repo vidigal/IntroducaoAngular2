@@ -39,6 +39,6 @@ import {FormsModule} from "@angular/forms";
         FormsModule
     ],
   providers: [],
-  bootstrap: [AppComponent, NavbarComponent, RodapeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
